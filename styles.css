@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
 
 body {
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: linear-gradient(to right, #e0f7fa, #ffeb3b);
+    background: linear-gradient(to right, #e0f7fa, #ffeb3b);
+    color: #333;
 }
 
 header {
@@ -13,17 +14,18 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    font-family: 'Lora', serify;
+    font-family: 'Lora', serif;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -32,25 +34,24 @@ nav ul li a {
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 nav ul li a:hover {
     color: #ffeb3b; /* Change color on hover */
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to sections */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+    background: rgba(255, 255, 255, 0.9); /* Default background */
 }
+
 section:hover {
     transform: translateY(-10px); /* Lift section on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-}
-#home {
-    background: rgba(255, 255, 255, 0.9); /* Change background color */
-    text-align: center;
-    font-family: 'Lora', serif;
 }
 
 #about {
@@ -75,6 +76,7 @@ section:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .project:hover {
     transform: translateY(-5px); /* Lift project on hover */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
@@ -90,4 +92,20 @@ footer {
     bottom: 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.social-media-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+.social-media-item img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media-item img:hover {
+    transform: scale(1.1);
+}
+
 
